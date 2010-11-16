@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 {
 	char *word = new(char);
 	std::cin >> word;
-	int N = strlen(word) - 1;
+	int N = strlen(word);
 	int i;
 
 	char *str, *rot;
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 	}
 	
 	//How to sort strings?
-	thrust::sort(rotD, rotD + N);
+//	thrust::sort(rotD, rotD + N);
 
 	for (i = 0; i < N; i++)
 	{
